@@ -1,0 +1,62 @@
+#pagina {
+    display: flex;
+    height: 100vh;
+    #formulario {
+        background-color: #fcfcfc;
+        width: 50vw;
+        padding: 50px;
+        text-align: center;
+        .form-group label{
+            color: black;
+        }
+        input {
+            border: solid black 1px;
+        }
+        div:last-child {
+            margin-top: 20px;
+            button {
+                background-color: black;
+                color: #fcfcfc;
+                margin: 10px;
+                border-color: black;
+            }
+        }
+        
+    }
+    #qrCode {
+        background-color: black;
+        width: 50vw;
+        padding: 5vh 10vw;
+        div:first-child {
+            background-color: #fcfcfc;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            span:first-child {
+                font-size: 30px;
+                margin: 10px;
+                i {
+                    margin-right: 10px;
+                }
+            }
+            p {
+                font-size: 11px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #pagina {
+        flex-direction: column;
+        #formulario {
+            width: 100vw;
+        }
+        #qrCode {
+            width: 100vw;
+        }
+    }
+}

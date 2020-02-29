@@ -1,20 +1,33 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div id="pagina">
+  <div id="formulario">
+      <div>
+          <h4>Compartilhe o WI-FI do seu estabelecimento ou da sua casa de uma maneira fácil.</h4>
+          <p><b>Coloque as credencias abaixo:</b></p>
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+          <div class="form-group">
+              <label for="nomeRede">Nome do WI-FI:</label>
+              <input placeholder="Nome da Rede..." [(ngModel)]="ssid" (ngModelChange)="onChange()" class="form-control" type="text" id="nomeRede">
+          </div>
+          <div class="form-group">
+              <label for="senhaRede">Senha:</label>
+              <input placeholder="Senha..." [(ngModel)]="pass" (ngModelChange)="onChange()" class="form-control" type="text" id="senhaRede">
+          </div>
+      </div>
+      <div>
+          <button type="button" (click)="gerarPDF()" class="btn btn-dark">Download PDF</button>
+      </div>
+  </div>
+  <div id="qrCode">
+      <div #htmlQR id="print">
+          <span><i class="fa fa-wifi"></i>Wi-Fi</span>
+          <ngx-kjua [text]="wifi"></ngx-kjua>
+          <p>Para conectar com o seu celular ou tablet, escaneie o QR Code acima com sua camera. Para outros dispositivos, use as credenciais abaixo:</p>
+          <span>Rede:</span>
+          <h4>{{ ssid }}</h4>
+          <span>Senha:</span>
+          <h4>{{ pass }}</h4>
+      </div>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
