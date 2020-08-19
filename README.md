@@ -1,7 +1,7 @@
 # Compartilhe o seu Wi-Fi(Angular)
 > Um simples web app em Angular para gerar um QR Code com o acesso do seu Wi-Fi.
 
-Um webapp simples feito em angular para gerar um QR Code para o compartilhamento da sua rede de Wi-Fi e realizar o download em PDF. [Live Demo](https://wifi-share-fa39f.firebaseapp.com/)
+Um webapp simples feito em angular para gerar um QR Code para o compartilhamento da sua rede de Wi-Fi e realizar o download em PDF. [Live Demo](https://wifi-share-fa39f.firebaseapp.com/).
 
 OBS: A sua senha não é armazenada em nenhum momento.
 
