@@ -3,7 +3,7 @@
 
 Um webapp simples feito em angular para gerar um QR Code para o compartilhamento da sua rede de Wi-Fi e realizar o download em PDF.
 
-![Preview-Screens](https://github.com/arachnidiskandar/wifi-share/master/Screenshot.png)
+![Preview-Screens](https://github.com/arachnidiskandar/wifi-share/blob/master/Screenshot.png)
 
 ## Ferramentas utilizadas
 
