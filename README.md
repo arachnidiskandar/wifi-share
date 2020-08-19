@@ -12,5 +12,5 @@ OBS: A sua senha não é armazenada em nenhum momento.
 
 - [Angular](https://angular.io/)
 - [Typescript](https://www.typescriptlang.org/)
-- [ngx-kjua](https://www.typescriptlang.org/) - QR Code Generator
+- [ngx-kjua](https://www.typescriptlang.org/)
 - [Firebase](https://firebase.google.com/)
